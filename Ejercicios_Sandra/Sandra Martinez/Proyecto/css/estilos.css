@@ -1,0 +1,176 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Merriweather'
+}
+header {
+    width: 100%;
+    height: 70vh;
+  
+}      
+main {
+    width: 100%;
+    height: 150vh;
+   
+}
+
+footer
+{
+    width: 100%;
+    height: 30vh;
+    background-color: blue;
+}
+    nav
+    {
+    width: 100%;
+    height: 15vh;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    }
+    nav ul {
+    display: flex; 
+    
+}
+nav li{ 
+list-style-type: none;
+margin-right: 20px;
+}
+nav a {
+color: black;
+text-decoration: none;
+padding:0  10px;
+}
+
+nav a:hover{
+
+background-color: aquamarine;
+border-radius: 10 px;
+color: aliceblue;
+
+}
+nav p {
+    font-family: 'Merriweather', serif;
+    font-size: 2em;
+}
+/*Con imagen de fondo*/
+.fondo{
+    background:url(../IMG/pexels-thisisengineering-3862634.jpg);
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+font-size: 3em;
+text-shadow: 0 0 5px yellowgreen;
+color:#fff;
+}
+
+span{
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    color:aqua;
+}
+nav img{
+    display: none;
+}
+
+/*Seccion acerca de */
+#acerca {
+    width: 100%;
+    height: 50vh;
+    
+}
+
+
+#talleres {
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+}
+
+#contacto {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+
+}
+
+.contenedor{
+    width: 80%;
+    height: 45vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.contenedor div {
+    width: 30%;
+    height: 45vh;
+    text-align: justify;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.contenedor img{
+    width: 100%;
+    height: 45vh;
+}
+
+/*---------------------------------------------*/
+/*Diseño responsivo */
+/*---------------------------------------------*/
+@media(max-width:600px){
+    header{ 
+        height: 90vh;
+    }
+   nav ul{
+display: none;
+   }
+   nav img{
+    display: block;
+   }
+   nav p{
+    font-size: 3em;
+   }
+   .fondo{
+    height: 75vh;
+   }
+   h1{
+    text-align: center;
+    font-size: 2.5em;
+   }
+   /* Acerca de*/
+   .contenedor{
+    flex-direction: column;
+   }
+   .contenedor div{
+    width: 100%;
+   }
+   #acerca{
+    height: 110vh;
+   }
+}
+/*---------------------------------------------*/
